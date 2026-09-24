@@ -1,0 +1,20 @@
+{
+  "name": "qemu-lms-mcp",
+  "version": "0.1.0",
+  "description": "LM Studio Plugin providing QEMU management tools (wrapper of razr/qemu-mcp).",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "node scripts/setup.cjs"
+  },
+  "dependencies": {
+    "@lmstudio/sdk": "^2.0.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.2"
+  }
+}
